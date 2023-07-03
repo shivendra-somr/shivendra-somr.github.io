@@ -14,26 +14,20 @@ body {
     z-index: 999;
   }
   
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .nav-links {
+  #nav-menu ul {
     list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     margin: 0;
     padding: 0;
   }
   
-  .nav-links li {
+  #nav-menu li {
     margin-right: 20px;
   }
   
-  .nav-links li a {
+  .nav-link {
     color: #fff;
     text-decoration: none;
   }
@@ -42,53 +36,31 @@ body {
     padding: 50px;
   }
   
-  #home {
-    background-color: #f2f2f2;
-    text-align: center;
+  #home .home-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
   }
   
-  h1 {
+  .project-card {
     margin-bottom: 20px;
   }
   
-  #about {
-    background-color: #fff;
+  .project-card img {
+    width: 200px;
+    height: 150px;
   }
   
-  #skills {
-    background-color: #f2f2f2;
-  }
-  
-  #projects {
-    background-color: #fff;
-  }
-  
-  .project {
+  .skills-card {
+    display: flex;
+    align-items: center;
     margin-bottom: 20px;
   }
   
-  h3 {
-    margin: 10px 0;
-  }
-  
-  #contact {
-    background-color: #f2f2f2;
-  }
-  
-  form input,
-  form textarea {
-    display: block;
-    margin-bottom: 10px;
-    width: 100%;
-    padding: 10px;
-  }
-  
-  form button {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
+  .skills-card-img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
   }
   
   footer {

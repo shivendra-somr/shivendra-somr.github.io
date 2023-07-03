@@ -1,67 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
   <title>My Portfolio</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
   <script src="script.js"></script>
 </head>
 <body>
   <header>
-    <nav class="navbar">
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="resume.pdf">Resume</a></li>
+    <nav id="nav-menu">
+      <ul>
+        <li><a href="#home" class="nav-link home">Home</a></li>
+        <li><a href="#about" class="nav-link about">About</a></li>
+        <li><a href="#skills" class="nav-link skills">Skills</a></li>
+        <li><a href="#projects" class="nav-link projects">Projects</a></li>
+        <li><a href="#contact" class="nav-link contact">Contact</a></li>
+        <li><a href="resume.pdf" class="nav-link resume">Resume</a></li>
       </ul>
     </nav>
   </header>
   
   <section id="home">
+    <img src="./pic/My_pic.png" alt="Professional Photo" class="home-img">
     <h1>Welcome to My Portfolio</h1>
-    <p>Explore my work and get in touch!</p>
+    <p id="user-detail-intro">Highly motivated and skilled Java Backenddeveloper with a strong foundation in console-based projects and leadership experience.Proficient in Java, Spring Boot, Hibernate, andMaven. Proven problem-solving abilities and aresults-oriented approach, ready to contribute toimpactful software development projects</p>
   </section>
   
-  <section id="about">
+  <section id="about" class="about section">
     <h2>About Me</h2>
-    <p>Write a brief description about yourself and your skills.</p>
+    <p id="user-detail-name">Shivendra Kumar</p>
   </section>
   
   <section id="skills">
     <h2>Skills</h2>
-    <p>List your skills here.</p>
+    <div class="skills-card">
+      <img src="./pic/JavaScript_logo_PNG_(1).png" alt="Skill 1" class="skills-card-img">
+      <h3 class="skills-card-name">Javascript</h3>
+    </div>
+    <div class="skills-card">
+      <img src="skill2.jpg" alt="Skill 2" class="skills-card-img">
+      <h3 class="skills-card-name">Java</h3>
+    </div>
+    <div class="skills-card">
+      <img src="skill3.jpg" alt="Skill 3" class="skills-card-img">
+      <h3 class="skills-card-name">HTML5</h3>
+    </div>
+    <div class="skills-card">
+      <img src="skill4.jpg" alt="Skill 4" class="skills-card-img">
+      <h3 class="skills-card-name">CSS</h3>
+    </div>
   </section>
   
   <section id="projects">
-    <h2>My Projects</h2>
-    <div class="project">
-      <h3>Project 1</h3>
-      <p>Description of Project 1</p>
-      <a href="#">View Project</a>
+    <h2>Projects</h2>
+    <div class="project-card">
+      <img src="project1.jpg" alt="Project 1 Image">
+      <h3 class="project-title">StockSage</h3>
+      <p class="project-description">Developed StockSage, a trading platform inspired by Zerodha, aimed at empowering investors and traders to buy and sell stocks with simplicity and accuracy.</p>
+      <p class="project-tech-stack">Tech stack used: Java, Spring Tool Suite</p>
+      <a href="https://github.com/shivendra-somr/puzzling-tiger-7832" class="project-github-link">GitHub Repository</a>
+      <!-- <a href="#" class="project-deployed-link">Deployed Link</a> -->
     </div>
-    <div class="project">
-      <h3>Project 2</h3>
-      <p>Description of Project 2</p>
-      <a href="#">View Project</a>
+    <div class="project-card">
+      <img src="project2.jpg" alt="Project 2 Image">
+      <h3 class="project-title">INR Club</h3>
+      <p class="project-description">INRClub is a hotel booking website thatenables users to search for and reservehotels online by a team of 5 memberswithin a span of 5 days</p>
+      <p class="project-tech-stack">Tech stack used: HTML, CSS, Javascript</p>
+      <a href="https://github.com/shivendra-somr/fortunate-thunder-4899-" class="project-github-link">GitHub Repository</a>
+      <a href="#" class="project-deployed-link">Deployed Link</a>
     </div>
   </section>
   
   <section id="contact">
-    <h2>Contact Me</h2>
-    <form>
-      <input type="text" placeholder="Your Name">
-      <input type="email" placeholder="Your Email">
-      <textarea placeholder="Your Message"></textarea>
-      <button type="submit">Send Message</button>
-    </form>
+    <h2>Contact</h2>
+    <ul>
+      <li><a href="https://github.com/shivendra-somr" id="contact-github">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/shivendra-kumar-458a6142/" id="contact-linkedin">LinkedIn</a></li>
+      <li id="contact-phone">Phone: 7012627732</li>
+      <li id="contact-email">Email: shivendra-somr@gmail.com</li>
+    </ul>
+  </section>
+  
+  <section id="resume">
+    <h2>Resume</h2>
+    <button id="resume-button-1" onclick="window.open('resume.pdf', '_blank')">View Resume</button>
   </section>
   
   <footer>
     <p>&copy; 2023 My Portfolio. All rights reserved.</p>
   </footer>
+  
+  <div class="react-activity-calendar"></div>
+  <img id="github-streak-stats" src="https://github-readme-streak-stats.herokuapp.com/demo/" alt="GitHub Streak Stats">
+  <img id="github-top-langs" src="https://github.com/anuraghazra/github-readme-stats" alt="GitHub Top Languages">
+  <img id="github-stats-card" src="https://github.com/anuraghazra/github-readme-stats" alt="GitHub Stats Card">
 </body>
 </html>
