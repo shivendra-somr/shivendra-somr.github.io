@@ -19,8 +19,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0;
-    padding: 0;
+    margin-left: 50%;
+    padding: 20px;
+    width: 40%;
   }
   
   #nav-menu li {
