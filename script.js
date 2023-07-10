@@ -2,9 +2,9 @@ function openInNewWindow(link) {
     window.open(link, '_blank');
 }
 
-function downloadResume() {
+function downloadResume(link) {
     var linkResume = document.createElement('a');
-    linkResume.href = "https://drive.google.com/uc?export=download&id=1R8r7h2asT6xN01Vpa0_iIQjvFT5w5sTW";
+    linkResume.href = link;
     linkResume.download = 'resume.pdf';
     linkResume.click();
 }
