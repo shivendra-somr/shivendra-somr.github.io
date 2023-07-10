@@ -79,9 +79,9 @@ body {
     align-items: center;
   }
   
-  .resume-button-1{
+  .resume-button-2{
     background-color: transparent;
-
+    cursor: pointer;
     text-decoration: none;
     color: white;
   }
