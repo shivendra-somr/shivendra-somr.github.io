@@ -8,18 +8,16 @@ function openInNewWindow(link) {
 //     linkResume.download = 'resume.pdf';
 //     linkResume.click();
 // }
-
 // Get the resume links
 const resumeLink1 = document.getElementById('resume-link-1');
 const resumeLink2 = document.getElementById('resume-link-2');
 
-// Add event listeners to the resume links
-resumeLink1.addEventListener('click', function(event) {
+// Function to handle resume link click
+function handleResumeLinkClick(event) {
   event.preventDefault(); // Prevent default link behavior
-  window.open('resume.pdf', '_blank');
-});
+  window.open(event.target.href, '_blank');
+}
 
-resumeLink2.addEventListener('click', function(event) {
-  event.preventDefault(); // Prevent default link behavior
-  window.open('resume.pdf', '_blank');
-});
+// Add event listeners to the resume links
+resumeLink1.addEventListener('click', handleResumeLinkClick);
+resumeLink2.addEventListener('click', handleResumeLinkClick);

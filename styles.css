@@ -1,87 +1,87 @@
 /* Add your styles here */
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-  }
-  
-  header {
-    background-color: #333;
-    padding: 10px;
-    position: sticky;
-    top: 0;
-    z-index: 999;
-  }
-  
-  #nav-menu ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 50%;
-    padding: 20px;
-    width: 40%;
-  }
-  
-  #nav-menu li {
-    margin-right: 20px;
-  }
-  
-  .nav-link {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  section {
-    padding: 50px;
-  }
-  
-  #home .home-img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-  }
-  
-  .project-card {
-    margin-bottom: 20px;
-  }
-  
-  .project-card img {
-    width: 200px;
-    height: 150px;
-  }
-  
-  .skills-card {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  .skills-card-img {
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
-  }
-  
-  footer {
-    background-color: #333;
-    padding: 10px;
-    color: #fff;
-    text-align: center;
-  }
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
 
-  .react-activity-calendar{
-    width: 90%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .resume-button-2{
-    background-color: transparent;
-    cursor: pointer;
-    text-decoration: none;
-    color: white;
-  }
+header {
+  background-color: #333;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+#nav-menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 50%;
+  padding: 20px;
+  width: 40%;
+}
+
+#nav-menu li {
+  margin-right: 20px;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+section {
+  padding: 50px;
+}
+
+#home .home-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.project-card {
+  margin-bottom: 20px;
+}
+
+.project-card img {
+  width: 200px;
+  height: 150px;
+}
+
+.skills-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.skills-card-img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+footer {
+  background-color: #333;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+}
+
+.react-activity-calendar{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.resume-button-1{
+  background-color: transparent;
+
+  text-decoration: none;
+  color: white;
+}
