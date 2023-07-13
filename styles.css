@@ -7,8 +7,8 @@ body {
 }
 
 header {
-  background-color: #333;
-  padding: 10px;
+  background-color: rgb(10, 136, 115);
+  padding: 1px;
   position: sticky;
   top: 0;
   z-index: 999;
@@ -20,7 +20,7 @@ header {
   justify-content: space-between;
   align-items: center;
   margin-left: 50%;
-  padding: 20px;
+  /* padding: 15px; */
   width: 40%;
 }
 
@@ -55,9 +55,21 @@ section {
   margin-left: 10%;
 }
 
-#home div h1:nth-child(2){
-  font-size: 28px;
+#home div h1{
+  font-size: 32px;
   color: rgb(10, 136, 115);
+}
+
+/* Adjust the styles of the job title and cursor as needed */
+#job-title {
+  position: relative;
+  display: inline-block;
+  color: rgb(10, 136, 115);
+  margin-top: 0px;
+}
+
+#job-title .cursor {
+  display: inline;
 }
 
 #about{
@@ -67,14 +79,6 @@ section {
 }
 #user-detail-name{
   text-align: center;
-}
-.project-card {
-  margin-bottom: 20px;
-}
-
-.project-card img {
-  width: 200px;
-  height: 150px;
 }
 
 .skills-card {
@@ -117,7 +121,107 @@ footer {
   color: #fff;
 }
 
-.skills-card{
+#skills {
+  padding: 50px 0;
+  background-color: #f9f9f9;
+  margin-top: 2%;
+}
+
+#skills h2 {
+  text-align: center;
+  color: rgb(10, 136, 115);
+}
+
+.skills-card-container {
+  display: flex;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.skills-card-container1 {
+  display: flex;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+}
+
+.skills-card-container2 {
+  display: flex;
+  grid-template-columns: repeat(2, 1fr);
+  margin: auto;
+  justify-content: center;
+}
+
+.skills-card-container3 {
+  display: flex;
+  grid-template-columns: repeat(2, 1fr);
+  margin: auto;
+  justify-content: center;
+}
+
+.skills-card {
+  text-align: center;
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  width: 180px;
+  height: 180px;
+  border-radius: 5%;
   display: flex;
   flex-direction: column;
+}
+
+.skills-card-img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.skills-card-name {
+  font-weight: bold;
+  text-align: center;
+}
+
+.skills-card:hover{
+  background-color: rgb(10, 136, 115);
+}
+
+.skills-card-img:hover{
+  width: 110px;
+  height: 110px;
+}
+
+#projects{
+  padding: 50px 0;
+  background-color: #f9f9f9;
+  margin-top: 2%;
+  text-align: center;
+}
+
+#project-container{
+  width: 60%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+.project-card {
+  width: 300px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  box-shadow:  0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 2%;
+}
+
+#project-container div:nth-child(1) img{
+  min-height: 150px;
+  min-width: 100%;
+}
+
+.project-card img {
+  margin: auto;
+  width: 100%;
 }

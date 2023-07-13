@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <title>My Portfolio</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
-  <script src="script.js"></script>
 </head>
 
 <body>
@@ -26,9 +25,11 @@
   <section id="home">
     <img src="./pic/My_pic.png" alt="Professional Photo" class="home-img">
     <div>
-      <h1>Hi I'm</h1>
-      <h1>Shivendra Kumar</h1>
-      <p>Java Backend Developer</p>
+      <h1>SHIVENDRA KUMAR</h1>
+      <h2>
+        <span class="stationary-text">I'm a</span>
+        <span id="job-title"></span>
+      </h2>
     </div>
   </section>
 
@@ -45,73 +46,124 @@
   </section>
 
   <section id="skills">
-    <h2>Skills</h2>
-    <div class="skills-card">
-      <img src="./pic/JavaScript_logo_PNG_(1).png" alt="Skill 1" class="skills-card-img">
-      <h3 class="skills-card-name">Javascript</h3>
-    </div>
-    <div class="skills-card">
-      <img src="./pic/Java-01.png" alt="Skill 2" class="skills-card-img">
-      <h3 class="skills-card-name">Java</h3>
-    </div>
-    <div class="skills-card">
-      <img src="./pic/HTML-5-logo-vector-01.png" alt="Skill 3" class="skills-card-img">
-      <h3 class="skills-card-name">HTML5</h3>
-    </div>
-    <div class="skills-card">
-      <img src="./pic/CSS-3-01.png" alt="Skill 4" class="skills-card-img">
-      <h3 class="skills-card-name">CSS</h3>
-    </div>
+    <div class="container">
+      <div class="section-heading">
+          <h2 class="section-title">Skills</h2>
+      </div>
+      <h2>FRONTEND</h2>
+      <div class="skills-card-container">
+          <div class="skills-card">
+            <h3 class="skills-card-name">HTML</h3>
+            <img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg" alt="Skill Icon"
+                  class="skills-card-img">
+              
+          </div>
+          <div class="skills-card">
+            <h3 class="skills-card-name">CSS</h3>
+            <img src="https://www.vectorlogo.zone/logos/w3_css/w3_css-icon.svg" alt="Skill Icon"
+                  class="skills-card-img">
+              
+          </div>
+          <div class="skills-card">
+            <h3 class="skills-card-name">JAVASCRIPT</h3>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="Skill Icon"
+                  class="skills-card-img">
+              
+          </div>
+      </div>
+      <h2>BACKEND</h2>
+      <div class="skills-card-container1">
+          <div class="skills-card">
+            <h3 class="skills-card-name">SPRING BOOT</h3>
+              <img src="https://www.vectorlogo.zone/logos/springio/springio-icon.svg" alt="Skill Icon"
+                  class="skills-card-img">
+              
+          </div>
+          <div class="skills-card">
+            <h3 class="skills-card-name">JAVA</h3>
+              <img src="https://www.vectorlogo.zone/logos/java/java-icon.svg" alt="Skill Icon"
+                  class="skills-card-img">
+          </div>
+      </div>
+      <h2>DATABASES</h2>
+      <div class="skills-card-container2">
+          <div class="skills-card">
+            <h3 class="skills-card-name">MYSQL</h3>
+              <img src="https://www.vectorlogo.zone/logos/mysql/mysql-official.svg" alt="Skill Icon"
+                  class="skills-card-img">
+          </div>
+          <div class="skills-card">
+            <h3 class="skills-card-name">MONGO DB</h3>
+              <img src="https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg" alt="Skill Icon"
+                  class="skills-card-img">
+          </div>
+          <div class="skills-card">
+            <h3 class="skills-card-name">Postgresql</h3>
+              <img src="https://www.vectorlogo.zone/logos/postgresql/postgresql-vertical.svg" alt="Skill Icon"
+                  class="skills-card-img">
+          </div>
+      </div>
+      <h2>TOOLS</h2>
+      <div class="skills-card-container3">
+          <div class="skills-card">
+            <h3 class="skills-card-name">GITHUB</h3>
+              <img src="https://www.vectorlogo.zone/logos/github/github-icon.svg" alt="Skill Icon"
+                  class="skills-card-img">
+          </div>
+      </div>
+  </div>
   </section>
 
   <section id="projects">
     <h2>Projects</h2>
-    <div class="project-card">
-      <img src="./pic/StockSage.png" alt="Project 1 Image">
-      <h3 class="project-title">StockSage</h3>
-      <p class="project-description">Developed StockSage, a trading platform inspired by Zerodha, aimed at empowering
-        investors and traders to buy and sell stocks with simplicity and accuracy.</p>
-      <p class="project-tech-stack">Tech stack used: Java, Spring Tool Suite</p>
-      <a href="#" onclick="openInNewWindow('https://github.com/shivendra-somr/puzzling-tiger-7832')"
-        class="project-github-link">GitHub Repository</a>
-      <a href="#"
-        onclick="openInNewWindow('https://drive.google.com/file/d/1rDt5PMJn_N8KayCf5t5WI7gwK1K-PL1Z/view?usp=sharing')"
-        class="project-deployed-link">Deployed Link</a>
-    </div>
-    <div class="project-card">
-      <img src="./pic/InR CLUB (1).png" alt="Project 2 Image">
-      <h3 class="project-title">INR Club</h3>
-      <p class="project-description">INRClub is a hotel booking website thatenables users to search for and
-        reservehotels online by a team of 5 memberswithin a span of 5 days</p>
-      <p class="project-tech-stack">Tech stack used: HTML, CSS, Javascript</p>
-      <a href="#" onclick="openInNewWindow('https://github.com/shivendra-somr/fortunate-thunder-4899-')"
-        class="project-github-link">GitHub
-        Repository</a>
-      <a href="#" onclick="openInNewWindow('https://inrclub.netlify.app/')" class="project-deployed-link">Deployed
-        Link</a>
-    </div>
-    <div class="project-card">
-      <img src="./pic/SastaVilla.png" alt="Project 2 Image">
-      <h3 class="project-title">SastaVilla</h3>
-      <p class="project-description">INRClub is a hotel booking website thatenables users to search for and
-        reservehotels online by a team of 5 memberswithin a span of 5 days</p>
-      <p class="project-tech-stack">Tech stack used: HTML, CSS, Javascript</p>
-      <a href="#" onclick="openInNewWindow('https://github.com/shivendra-somr/SastaVilla')"
-        class="project-github-link">GitHub Repository</a>
-      <a href="#" onclick="openInNewWindow('https://sastavilla.netlify.app/')" class="project-deployed-link">Deployed
-        Link</a>
-    </div>
-    <div class="project-card">
-      <img src="./pic/InR CLUB (1).png" alt="Project 2 Image">
-      <h3 class="project-title">INR Club</h3>
-      <p class="project-description">INRClub is a hotel booking website thatenables users to search for and
-        reservehotels online by a team of 5 memberswithin a span of 5 days</p>
-      <p class="project-tech-stack">Tech stack used: HTML, CSS, Javascript</p>
-      <a href="#" onclick="openInNewWindow('https://github.com/shivendra-somr/fortunate-thunder-4899-')"
-        class="project-github-link">GitHub
-        Repository</a>
-      <a href="#" onclick="openInNewWindow('https://inrclub.netlify.app/')" class="project-deployed-link">Deployed
-        Link</a>
+    <div id="project-container">
+      <div class="project-card">
+        <img src="./pic/StockSage.png" alt="Project 1 Image">
+        <h3 class="project-title">StockSage</h3>
+        <p class="project-description">Developed StockSage, a trading platform inspired by Zerodha, aimed at empowering
+          investors and traders to buy and sell stocks with simplicity and accuracy.</p>
+        <p class="project-tech-stack">Tech stack used: Java, Spring Tool Suite</p>
+        <a href="#" onclick="openInNewWindow('https://github.com/shivendra-somr/puzzling-tiger-7832')"
+          class="project-github-link">GitHub Repository</a>
+        <a href="#"
+          onclick="openInNewWindow('https://drive.google.com/file/d/1rDt5PMJn_N8KayCf5t5WI7gwK1K-PL1Z/view?usp=sharing')"
+          class="project-deployed-link">Deployed Link</a>
+      </div>
+      <div class="project-card">
+        <img src="./pic/INRClub project.png" alt="Project 2 Image">
+        <h3 class="project-title">INR Club</h3>
+        <p class="project-description">INRClub is a hotel booking website thatenables users to search for and
+          reservehotels online by a team of 5 memberswithin a span of 5 days</p>
+        <p class="project-tech-stack">Tech stack used: HTML, CSS, Javascript</p>
+        <a href="#" onclick="openInNewWindow('https://github.com/shivendra-somr/fortunate-thunder-4899-')"
+          class="project-github-link">GitHub
+          Repository</a>
+        <a href="#" onclick="openInNewWindow('https://inrclub.netlify.app/')" class="project-deployed-link">Deployed
+          Link</a>
+      </div>
+      <div class="project-card">
+        <img src="./pic/SastaVilla Project.png" alt="Project 3 Image">
+        <h3 class="project-title">SastaVilla</h3>
+        <p class="project-description">INRClub is a hotel booking website thatenables users to search for and
+          reservehotels online by a team of 5 memberswithin a span of 5 days</p>
+        <p class="project-tech-stack">Tech stack used: HTML, CSS, Javascript</p>
+        <a href="#" onclick="openInNewWindow('https://github.com/shivendra-somr/SastaVilla')"
+          class="project-github-link">GitHub Repository</a>
+        <a href="#" onclick="openInNewWindow('https://sastavilla.netlify.app/')" class="project-deployed-link">Deployed
+          Link</a>
+      </div>
+      <div class="project-card">
+        <img src="./pic/INRClub project.png" alt="Project 4 Image">
+        <h3 class="project-title">INR Club</h3>
+        <p class="project-description">INRClub is a hotel booking website thatenables users to search for and
+          reservehotels online by a team of 5 memberswithin a span of 5 days</p>
+        <p class="project-tech-stack">Tech stack used: HTML, CSS, Javascript</p>
+        <a href="#" onclick="openInNewWindow('https://github.com/shivendra-somr/fortunate-thunder-4899-')"
+          class="project-github-link">GitHub
+          Repository</a>
+        <a href="#" onclick="openInNewWindow('https://inrclub.netlify.app/')" class="project-deployed-link">Deployed
+          Link</a>
+      </div>
     </div>
   </section>
 
@@ -147,6 +199,7 @@
     </a>
 
   </div>
+  <script src="script.js"></script>
 </body>
 
 </html>
