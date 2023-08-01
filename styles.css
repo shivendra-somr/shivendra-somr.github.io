@@ -7,7 +7,7 @@ body {
 }
 
 header {
-  background-color: rgb(10, 136, 115);
+  background-color: black;
   padding: 1px;
   position: sticky;
   top: 0;
@@ -20,7 +20,6 @@ header {
   justify-content: space-between;
   align-items: center;
   margin-left: 50%;
-  /* padding: 15px; */
   width: 40%;
 }
 
@@ -57,14 +56,13 @@ section {
 
 #home div h1{
   font-size: 32px;
-  color: rgb(10, 136, 115);
+  color: #8AAAE5;
 }
 
-/* Adjust the styles of the job title and cursor as needed */
 #job-title {
   position: relative;
   display: inline-block;
-  color: rgb(10, 136, 115);
+  color: #8AAAE5;
   margin-top: 0px;
 }
 
@@ -77,6 +75,11 @@ section {
   width: 60%;
   text-align: center;
 }
+
+#about h2{
+  color: #8AAAE5;
+}
+
 #user-detail-name{
   text-align: center;
 }
@@ -94,9 +97,9 @@ section {
 }
 
 footer {
-  background-color: #333;
+  background-color: black;
   padding: 10px;
-  color: #fff;
+  color: white;
   text-align: center;
 }
 
@@ -111,7 +114,7 @@ footer {
 #resume-button-2{
   font-size: large;
   padding: 8px;
-  background-color:  rgb(10, 136, 115);
+  background-color:  #8AAAE5;
   color: black;
   text-decoration: none;
   border-radius: 10px;
@@ -123,41 +126,22 @@ footer {
 
 #skills {
   padding: 50px 0;
-  background-color: #f9f9f9;
+  /* background-color: ; */
   margin-top: 2%;
 }
 
 #skills h2 {
   text-align: center;
-  color: rgb(10, 136, 115);
+  color: #8AAAE5;
 }
 
 .skills-card-container {
   display: flex;
-  grid-template-columns: repeat(3, 1fr);
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: flex-start;
-}
-
-.skills-card-container1 {
-  display: flex;
-  grid-template-columns: repeat(2, 1fr);
-  justify-content: center;
-  align-items: center;
-}
-
-.skills-card-container2 {
-  display: flex;
-  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  width: 80%;
   margin: auto;
-  justify-content: center;
-}
-
-.skills-card-container3 {
-  display: flex;
-  grid-template-columns: repeat(2, 1fr);
-  margin: auto;
-  justify-content: center;
 }
 
 .skills-card {
@@ -185,7 +169,7 @@ footer {
 }
 
 .skills-card:hover{
-  background-color: rgb(10, 136, 115);
+  background-color: #8AAAE5;
 }
 
 .skills-card-img:hover{
@@ -193,35 +177,102 @@ footer {
   height: 110px;
 }
 
-#projects{
+#projects {
   padding: 50px 0;
-  background-color: #f9f9f9;
+  background-color: white;
   margin-top: 2%;
   text-align: center;
 }
 
-#project-container{
+#projects h2 {
+  color: #8AAAE5;
+}
+
+#project-container {
   width: 60%;
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
+
 .project-card {
   width: 300px;
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
   text-align: justify;
-  box-shadow:  0 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   padding: 2%;
+  border-radius: 20px;
+  transition: box-shadow 0.3s ease-in-out;
 }
 
-#project-container div:nth-child(1) img{
-  min-height: 150px;
-  min-width: 100%;
+.project-card:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); /* Add a stronger shadow effect on hover */
 }
 
-.project-card img {
-  margin: auto;
+.project-image {
+  max-height: 150px;
+  max-width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.project-image img {
   width: 100%;
+}
+
+.project-content {
+  flex: 1;
+}
+
+.project-description{
+  height: 80px;
+}
+
+.project-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+}
+
+.project-description {
+  margin-top: 10px;
+  color: #666;
+}
+
+.project-tech-stack {
+  margin-top: 10px;
+  color: #888;
+}
+
+.project-links {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.project-links a {
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.project-links img {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+}
+
+#contact {
+  width: 30%;
+  margin: auto;
+}
+#contact h2{
+  text-align: center;
+}
+
+#contact a{
+  text-decoration: none;
+  color: black;
 }
