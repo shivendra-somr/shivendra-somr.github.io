@@ -57,17 +57,7 @@ function updateJobTitle() {
 updateJobTitle();
 
 //Night Mode function
-// const nightModeToggle = document.getElementById('night-mode-toggle');
 
-// nightModeToggle.addEventListener('change', function() {
-//   if (this.checked) {
-//     body.classList.add('dark-mode');
-//   } else {
-//     body.classList.remove('dark-mode');// Empty href to revert to the default styles.css
-//   }
-// });
-
-// dark mode toggle 
 const darkModeToggle = document.getElementById('night-mode-toggle');
 const body = document.body;
 
