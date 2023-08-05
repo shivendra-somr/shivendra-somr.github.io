@@ -179,7 +179,6 @@ footer {
 
 #projects {
   padding: 50px 0;
-  background-color: white;
   margin-top: 2%;
   text-align: center;
 }
@@ -189,10 +188,13 @@ footer {
 }
 
 #project-container {
-  width: 60%;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   margin: auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  padding-top: 20px;
   gap: 20px;
 }
 
@@ -209,7 +211,7 @@ footer {
 }
 
 .project-card:hover {
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); /* Add a stronger shadow effect on hover */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); 
 }
 
 .project-image {
@@ -270,9 +272,149 @@ footer {
 }
 #contact h2{
   text-align: center;
+  color: #8AAAE5;
 }
 
 #contact a{
   text-decoration: none;
   color: black;
+}
+
+.toggle-mode {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+.toggle-mode input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.slider.round {
+  border-radius: 20px;
+}
+
+.toggle-mode input:checked + .slider {
+  background-color: #8AAAE5; /* Customize the color when the toggle is on */
+}
+
+/* Custom styling for the round toggle knob */
+.slider.round::before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: gold;
+  transition: transform 0.3s ease;
+}
+
+/* Move the toggle knob to the right when the toggle is on */
+.toggle-mode input:checked + .slider.round::before {
+  background-color: black;
+  transform: translateX(20px); /* Move it to the right (width of the slider) */
+}
+
+
+/*Night mode*/
+body.dark-mode  {
+  background-color: #1a1a2e;
+  color: #fff;
+}
+
+.dark-mode header {
+  background-color: #000;
+}
+
+.dark-mode .nav-link {
+  color: #fff;
+}
+
+.dark-mode .skills-card {
+  background-color: #000;
+  color: #fff;
+}
+
+.dark-mode .skills-card:hover {
+  background-color: #8AAAE5;
+}
+
+.dark-mode .project-card {
+  background-color: #000;
+  color: #fff;
+}
+
+.dark-mode .project-card:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode .slider.round {
+  background-color: #000;
+}
+
+/* Custom styling for the round toggle knob */
+.dark-mode .slider.round::before {
+  background-color: #fff;
+}
+
+/* Move the toggle knob to the right when the toggle is on */
+.dark-mode .toggle-mode input:checked+.slider.round::before {
+  transform: translateX(20px); /* width of the slider */
+}
+
+/* Styles for elements that need to remain unchanged in night mode */
+.dark-mode #home {
+  background-color: transparent;
+}
+
+.dark-mode #home h1 {
+  color: #8AAAE5;
+}
+
+.dark-mode #home p {
+  color: #fff;
+}
+
+.dark-mode #about h2 {
+  color: #8AAAE5;
+}
+
+.dark-mode #user-detail-name {
+  color: #fff;
+}
+
+.dark-mode #resume-button-2 {
+  background-color: #8AAAE5;
+  color: #000;
+}
+
+.dark-mode #resume-button-2:hover {
+  color: #fff;
+}
+
+.dark-mode #skills h2 {
+  color: #8AAAE5;
+}
+
+.dark-mode #contact h2 {
+  color: #8AAAE5;
+}
+
+.dark-mode #contact a {
+  color: #fff;
 }

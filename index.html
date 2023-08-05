@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <title>My Portfolio</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="styles.css" id="theme-link">
+  <!-- <link rel="stylesheet" href="night-mode.css"> -->
 </head>
 
 <body>
@@ -18,11 +19,15 @@
         <li><a href="#contact" class="nav-link contact">Contact</a></li>
         <li><a href="https://drive.google.com/uc?id=1R8r7h2asT6xN01Vpa0_iIQjvFT5w5sTW&export=download"
             class="nav-link resume" id="resume-button-1">Resume</a></li>
+        <li><label class="toggle-mode">
+            <input type="checkbox" id="night-mode-toggle">
+            <span class="slider round"></span>
+          </label></li>
       </ul>
     </nav>
   </header>
 
-  
+
   <section id="home">
     <img src="./pic/My_pic.png" alt="Professional Photo" class="home-img">
     <div>
@@ -66,11 +71,13 @@
         </div>
         <div class="skills-card">
           <h3 class="skills-card-name">JAVASCRIPT</h3>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="Skill Icon" class="skills-card-img">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="Skill Icon"
+            class="skills-card-img">
         </div>
         <div class="skills-card">
           <h3 class="skills-card-name">SPRING BOOT</h3>
-          <img src="https://www.vectorlogo.zone/logos/springio/springio-icon.svg" alt="Skill Icon" class="skills-card-img">
+          <img src="https://www.vectorlogo.zone/logos/springio/springio-icon.svg" alt="Skill Icon"
+            class="skills-card-img">
 
         </div>
         <div class="skills-card">
@@ -86,7 +93,7 @@
           <h3 class="skills-card-name">GITHUB</h3>
           <img src="https://www.vectorlogo.zone/logos/github/github-icon.svg" alt="Skill Icon" class="skills-card-img">
         </div>
-      </div>      
+      </div>
     </div>
   </section>
 
@@ -120,14 +127,16 @@
         </div>
         <div class="project-content">
           <h3 class="project-title">EduOnGo - Online LMS</h3>
-          <p class="project-description">The EduOnGo (OLMS) is a comprehensive software solution designed to support remote education and training.</p>
+          <p class="project-description">The EduOnGo (OLMS) is a comprehensive software solution designed to support
+            remote education and training.</p>
           <p class="project-tech-stack">Tech stack: Java | Maven | MySql</p>
 
           <div class="project-links">
             <a href="#" onclick="openInNewWindow('https://github.com/shivendra-somr/EduOnGo')"
               class="project-github-link"><i class="fa-brands fa-github" style="color: #8aaae5;"></i></a>
-            <a href="" onclick="openInNewWindow('https://drive.google.com/file/d/1RcpfwQjrulTNwPJ0_JuoU5MQFL4_rOrm/view?usp=sharing')" class="project-deployed-link"><i
-                class="fa-solid fa-link" style="color: #8aaae5;"></i></a>
+            <a href=""
+              onclick="openInNewWindow('https://drive.google.com/file/d/1RcpfwQjrulTNwPJ0_JuoU5MQFL4_rOrm/view?usp=sharing')"
+              class="project-deployed-link"><i class="fa-solid fa-link" style="color: #8aaae5;"></i></a>
           </div>
         </div>
       </div>
@@ -177,13 +186,13 @@
         alt="GitHub Streak Stats" />
     </a>
     <a href="https://github.com/shivendra-somr/github-readme-stats">
+      <img id="github-stats-card" src="https://github-readme-stats.vercel.app/api?username=shivendra-somr"
+        alt="GitHub Stats Card" />
+    </a>
+    <a href="https://github.com/shivendra-somr/github-readme-stats">
       <img id="github-top-langs"
         src="https://github-readme-stats.vercel.app/api/top-langs/?username=shivendra-somr&layout=donut"
         alt="GitHub Top Langs" />
-    </a>
-    <a href="https://github.com/shivendra-somr/github-readme-stats">
-      <img id="github-stats-card" src="https://github-readme-stats.vercel.app/api?username=shivendra-somr"
-        alt="GitHub Stats Card" />
     </a>
   </div>
 

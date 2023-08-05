@@ -55,3 +55,47 @@ function updateJobTitle() {
 
 // Start the job title animation
 updateJobTitle();
+
+//Night Mode function
+// const nightModeToggle = document.getElementById('night-mode-toggle');
+
+// nightModeToggle.addEventListener('change', function() {
+//   if (this.checked) {
+//     body.classList.add('dark-mode');
+//   } else {
+//     body.classList.remove('dark-mode');// Empty href to revert to the default styles.css
+//   }
+// });
+
+// dark mode toggle 
+const darkModeToggle = document.getElementById('night-mode-toggle');
+const body = document.body;
+
+darkModeToggle.addEventListener('change', function () {
+  if (darkModeToggle.checked) {
+    enableDarkMode();
+  } else {
+    disableDarkMode();
+  }
+});
+
+function enableDarkMode() {
+  body.classList.add('dark-mode');
+  localStorage.setItem('darkModeEnabled', true);
+}
+
+function disableDarkMode() {
+  body.classList.remove('dark-mode');
+  localStorage.setItem('darkModeEnabled', false);
+}
+
+// Check if dark mode was previously enabled
+const darkModeEnabled = localStorage.getItem('darkModeEnabled');
+if (darkModeEnabled && darkModeEnabled === 'true') {
+  darkModeToggle.checked = true;
+  enableDarkMode();
+}
+else {
+  darkModeToggle.checked = false;
+  disableDarkMode();
+}
