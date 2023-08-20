@@ -231,17 +231,14 @@ footer {
 
 .project-description{
   height: 80px;
+  margin-top: 10px;
+  color: #000;
 }
 
 .project-title {
   font-size: 22px;
   font-weight: bold;
   color: #333;
-}
-
-.project-description {
-  margin-top: 10px;
-  color: #666;
 }
 
 .project-tech-stack {
@@ -362,8 +359,11 @@ body.dark-mode  {
 .dark-mode .project-card:hover {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
+.dark-mode .project-description{
+  color: #fff;
+}
 
-.dark-mode .project-title,.project-description,.project-tech-stack {
+.dark-mode .project-title,.project-tech-stack {
   color: white;
 }
 
