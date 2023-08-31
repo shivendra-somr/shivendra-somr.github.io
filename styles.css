@@ -243,7 +243,7 @@ footer {
 
 .project-tech-stack {
   margin-top: 10px;
-  color: #888;
+  color: #000;
 }
 
 .project-links {
@@ -363,8 +363,12 @@ body.dark-mode  {
   color: #fff;
 }
 
-.dark-mode .project-title,.project-tech-stack {
+.dark-mode .project-title {
   color: white;
+}
+
+.dark-mode .project-tech-stack{
+  color: #fff;
 }
 
 .dark-mode .slider.round {
